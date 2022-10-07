@@ -76,3 +76,18 @@ php artisan migrate
 #drop migrate/rollback
 
 php artisan migrate:rollback
+
+#membuat model
+php artisan make:model CampBenefit -m
+
+#membuat seed
+php artisan make:seeder Camp
+
+#menjalankan seed
+
+php artisan db:seed
+
+#untuk merefresh data di dalam tabel
+php artisan migrate:fresh --seed
+
+
